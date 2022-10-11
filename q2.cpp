@@ -3,8 +3,8 @@
 using namespace std;
 
 void getInput(int &n1,int &n2,int &n3);
-void findMin(int &n1, int &n2, int &n3);
-void printResult(int &n1, int &n2, int &n3);
+void findMin(int &n1, int &n2, int &n3, int &min);
+void printResult(int &n1, int &n2, int &n3, int &min);
 
 // ******************************
 // Your code here
@@ -16,7 +16,7 @@ void printResult(int &n1, int &n2, int &n3);
 int main() {
 	int num1, num2, num3, min;
 	getInput(num1,num2,num3);
-	findMin(num1,num2,num3);
+	findMin(num1,num2,num3, min);
 	printResult(num1, num2, num3, min);
 }
 void getInput(int &n1, int &n2, int &n3){
@@ -30,7 +30,7 @@ void findMin(int &n1, int &n2, int&n3){
 	if (n3 < min)
 		min = n3;
 }
-void printResult(int n1, int n2, int n3, int min)
+void printResult(int &n1, int &n2, int &n3, int &min)
 {
 	cout << n1 << " " << n2 << " " << n3 << " " << min << " " << endl;
 }
