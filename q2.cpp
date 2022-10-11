@@ -2,6 +2,10 @@
 #include <iomanip>
 using namespace std;
 
+void getInput(int &n1,int &n2,int &n3);
+void findMin(int &n1, int &n2, int &n3);
+void printResult(int &n1, int &n2, int &n3);
+
 // ******************************
 // Your code here
 // ******************************
